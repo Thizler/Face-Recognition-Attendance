@@ -28,23 +28,23 @@
 ---
 
 ## 📁 Project Structure
-Face-Recognition-Attendance/
-│
-├── app.py # Main Flask Application
-├── model.py # AI Model (Siamese Network)
-├── utils.py # Helper functions
-├── haarcascade_frontalface_default.xml
-│
-├── siamese_model.pth # Trained Siamese Model
-├── face_encoder.pt # Face Encoder
-├── face_db.pt # Face Database
-│
-├── attendance.csv # Attendance Record
-│
-├── templates/ # HTML Templates
-├── static/ # CSS / JS / Assets
-└── README.md
-
+Face-Recognition-Attendance/  
+│  
+├── app.py # Main Flask Application  
+├── model.py # AI Model (Siamese Network)  
+├── utils.py # Helper functions  
+├── haarcascade_frontalface_default.xml  
+│  
+├── siamese_model.pth # Trained Siamese Model  
+├── face_encoder.pt # Face Encoder  
+├── face_db.pt # Face Database  
+│  
+├── attendance.csv # Attendance Record  
+│  
+├── templates/ # HTML Templates  
+├── static/ # CSS / JS / Assets  
+└── README.md  
+  
 ---
 
 ## ⚙️ Installation
