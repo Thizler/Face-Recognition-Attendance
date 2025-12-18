@@ -1,104 +1,85 @@
-🎓 Face Recognition Attendance System
+# 🎓 Face Recognition Attendance System
+> ระบบเช็คชื่อด้วยการจดจำใบหน้า (AI-powered Attendance System)
 
-ระบบเช็คชื่อด้วยการจดจำใบหน้า (Face Recognition Attendance System)
-พัฒนาโดยใช้ Python และ AI / Deep Learning เพื่อระบุตัวตนจากกล้องและบันทึกการเข้าเรียนอัตโนมัติ
+ระบบเช็คชื่ออัตโนมัติด้วย **Face Recognition**  
+พัฒนาโดยใช้ **Python, OpenCV และ Deep Learning (Siamese Network)**  
+เหมาะสำหรับใช้งานในห้องเรียน หรือเป็นโปรเจคด้าน **AI / Computer Vision**
 
-📌 Features
+---
 
-ตรวจจับใบหน้าด้วย Haar Cascade
+## ✨ Features
+✅ ตรวจจับใบหน้าด้วย Haar Cascade  
+✅ จดจำใบหน้าด้วย Siamese Neural Network  
+✅ บันทึกเวลาเข้าเรียนอัตโนมัติ  
+✅ แสดงผลผ่าน Web Application  
+✅ ใช้โมเดลที่ฝึกไว้แล้ว (Pre-trained Model)
 
-จดจำใบหน้าด้วย Siamese Neural Network
+---
 
-บันทึกข้อมูลการเข้าเรียนลงไฟล์ attendance.csv
+## 🧠 Technologies
+| Category | Tools |
+|-------|------|
+| Language | Python |
+| AI / ML | PyTorch, Siamese Network |
+| Computer Vision | OpenCV |
+| Web Framework | Flask |
+| Data | NumPy, Pandas |
 
-รองรับการใช้งานผ่าน Web Application
+---
 
-ใช้โมเดลที่ฝึกไว้แล้ว (.pth / .pt)
-
-🧠 Technologies Used
-
-Python
-
-OpenCV
-
-PyTorch
-
-Flask
-
-NumPy / Pandas
-
-Haar Cascade Classifier
-
-Siamese Network
-
-📂 Project Structure
+## 📁 Project Structure
 Face-Recognition-Attendance/
 │
-├── app.py                         # ไฟล์หลักสำหรับรันเว็บแอป
-├── model.py                       # โครงสร้างและการโหลดโมเดล AI
-├── utils.py                       # ฟังก์ชันช่วยเหลือ (encode / compare face)
+├── app.py # Main Flask Application
+├── model.py # AI Model (Siamese Network)
+├── utils.py # Helper functions
 ├── haarcascade_frontalface_default.xml
 │
-├── siamese_model.pth              # โมเดล Siamese Network
-├── face_encoder.pt                # โมเดลแปลงใบหน้าเป็น feature
-├── face_db.pt                     # ฐานข้อมูลใบหน้า
+├── siamese_model.pth # Trained Siamese Model
+├── face_encoder.pt # Face Encoder
+├── face_db.pt # Face Database
 │
-├── attendance.csv                 # ไฟล์บันทึกการเช็คชื่อ
+├── attendance.csv # Attendance Record
 │
-├── templates/                     # HTML templates
-├── static/                        # CSS / JS / Images
+├── templates/ # HTML Templates
+├── static/ # CSS / JS / Assets
 └── README.md
 
-⚙️ Installation
-1️⃣ Clone Repository
+---
+
+## ⚙️ Installation
+
+### 🔹 1. Clone Repository
+```bash
 git clone https://github.com/Thizler/Face-Recognition-Attendance.git
 cd Face-Recognition-Attendance
-
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-
-
-หากไม่มี requirements.txt แนะนำติดตั้ง:
-
+🔹 2. Install Dependencies
+```bash
 pip install flask opencv-python torch torchvision numpy pandas
-
-▶️ How to Run
+```
+▶️ Run the Project
+```bash
 python app.py
+```
+เปิดเว็บเบราว์เซอร์:
 
-
-จากนั้นเปิดเบราว์เซอร์ไปที่:
-
+```cpp
 http://127.0.0.1:5000
+```
 
 📝 Attendance Output
+ข้อมูลการเช็คชื่อจะถูกบันทึกลงไฟล์ attendance.csv
 
-ข้อมูลการเช็คชื่อจะถูกบันทึกในไฟล์:
-
-attendance.csv
-
-
-รูปแบบข้อมูล:
+ตัวอย่างข้อมูล:
 
 Name	Date	Time
-Student1	2025-01-01	08:30:15
-🎯 Use Case
+Student01	2025-01-01	08:30:15
 
-ระบบเช็คชื่อในห้องเรียน
+🎯 Use Cases
+📚 ระบบเช็คชื่อในห้องเรียน
 
-ระบบยืนยันตัวตน
+🧑‍🎓 ระบบยืนยันตัวตน
 
-โปรเจคด้าน AI / Computer Vision
+🤖 โปรเจคด้าน AI / Computer Vision
 
-Mini Project / Final Project
-
-🚀 Future Improvements
-
-เชื่อมต่อฐานข้อมูล MySQL / Firebase
-
-เพิ่มระบบ Login (Admin / Teacher)
-
-รองรับหลายกล้อง
-
-เพิ่มความแม่นยำของโมเดล
-
-Deploy ขึ้น Cloud
+🎓 Mini / Final Project
