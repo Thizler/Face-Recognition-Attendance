@@ -84,3 +84,12 @@ Student01	2025-01-01	08:30:15
 🤖 โปรเจคด้าน AI / Computer Vision
 
 🎓 Mini / Final Project
+  
+## Authors  
+Department of Computer Science, Srinakharinwirot University
+- Kunanon Hareutaitam - kunanon.mas@g.swu.ac.th
+- Wuttikorn Jantawises - wuttikorn.jantawises@g.swu.ac.th
+- Chanatip Sudsom - chanatip.sudsom@g.swu.ac.th
+- Aekkaphop Aunma - aekkaphop.aunma@g.swu.ac.th
+- Tinnapat Luankla - tinnapat.luankla@g.swu.ac.th
+
