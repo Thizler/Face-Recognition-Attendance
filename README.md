@@ -54,7 +54,7 @@ Face-Recognition-Attendance/
 git clone https://github.com/Thizler/Face-Recognition-Attendance.git
 cd Face-Recognition-Attendance
 ```
-🔹 2. Install Dependencies
+### 🔹 2. Install Dependencies
 ```bash
 pip install flask opencv-python torch torchvision numpy pandas
 ```
